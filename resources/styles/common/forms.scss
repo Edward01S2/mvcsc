@@ -1,0 +1,69 @@
+.gfield {
+  @apply mb-4 md:w-full;
+  input,
+  select,
+  textarea {
+    @apply w-full bg-white focus:outline-none text-black shadow-sm border-gray-300 py-3 placeholder-gray-500 rounded-md;
+  }
+  &.gfield_error {
+    input,
+    select,
+    textarea {
+      @apply ring-2 ring-red-500;
+    }
+  }
+  textarea {
+    @apply h-40;
+  }
+  .gfield_label {
+    @apply hidden;
+  }
+}
+
+.gform_confirmation_message {
+  @apply text-center;
+}
+
+.hidden_label label {
+  @apply hidden;
+}
+
+.gfield_visibility_hidden {
+  @apply hidden;
+}
+.validation_message {
+  @apply hidden;
+}
+.validation_error,
+.gform_submission_error {
+  @apply text-red-500 text-base px-0 mb-4 md:mb-4 md:w-4/5 md:mx-auto md:text-center #{!important};
+}
+.gform_footer {
+  @apply flex justify-center mt-6;
+  .gform_button {
+    @apply bg-transparent text-c-blue-100 border-2 border-c-blue-100 rounded-full w-auto font-bold px-12 py-2 hover:bg-c-blue-100 hover:text-c-blue-300 cursor-pointer;
+  }
+}
+// .gfield_required {
+//   @apply hidden;
+// }
+
+.gform_validation_container {
+  @apply hidden;
+}
+
+.gform_ajax_spinner {
+  @apply hidden;
+}
+
+.contact-form {
+  .gfield {
+    @apply mb-4 lg:mb-6;
+  }
+  .gform_footer {
+    @apply flex justify-center;
+    .gform_button {
+      @apply bg-green-800 text-white rounded-full py-3 border-0 w-auto px-10 hover:bg-green-600;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+html {
+  @apply bg-gray-50 min-h-screen flex flex-col;
+}
+
+body {
+  @apply font-sans flex-grow flex flex-col;
+}
+
+#app {
+  @apply flex-grow flex flex-col;
+  > div {
+    @apply flex-grow flex flex-col;
+  }
+  #main {
+    @apply flex-grow;
+  }
+}
+
+[x-cloak] {
+  @apply hidden;
+}
+
+button,
+a {
+  @apply transition duration-200;
+}
+
+.brand {
+  @apply text-3xl font-medium text-indigo-500;
+}
+
+.about-container {
+  .about-item:nth-child(1) {
+    @apply mt-0 md:mt-12 lg:mt-16;
+  }
+
+  .about-item:nth-child(even) {
+    .content-container {
+      @apply lg:col-start-2;
+    }
+    .img-item {
+      @apply lg:col-start-1;
+    }
+    .img-container {
+      @apply -ml-48 md:-ml-16 mr-0 md:mr-0 xl:mx-0;
+    }
+  }
+}
+
+.contact-item {
+  a {
+    @apply hover:underline;
+  }
+}
