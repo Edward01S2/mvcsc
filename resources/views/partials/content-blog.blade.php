@@ -6,7 +6,7 @@
     </div>
     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
       <div class="flex-1">
-        <p class="text-sm font-medium text-green-600">
+        <p class="text-sm font-medium text-[#4B5320]">
           {!! $cats !!}
         </p>
         <a href="{{ get_the_permalink($id) }}" class="block group">

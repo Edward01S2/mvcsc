@@ -14,6 +14,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        'mili-green' : {
+          100: '#6D712E'
+        },
         'c-blue': {
           100: '#00C6F2',
           200: '#1851FF',

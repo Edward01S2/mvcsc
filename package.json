@@ -46,12 +46,8 @@
     "jquery": "^3.5.1"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.4.1",
     "alpinejs": "^3.2.1",
     "gsap": "file:gsap-bonus.tgz",
-    "swiper": "^6.7.1",
-    "tiny-slider": "gvozdb/tiny-slider#master",
-    "tsparticles": "^1.32.0",
     "underscore": "^1.13.1"
   }
 }

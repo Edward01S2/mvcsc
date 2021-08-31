@@ -1,6 +1,6 @@
 <div class="{{ $block->classes }}">
   <div class="bg-white">
-    <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
+    <div class="px-4 pt-12 pb-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="divide-y-2 divide-gray-200">
         <div class="lg:grid lg:grid-cols-3 lg:gap-8">
           <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
@@ -21,7 +21,7 @@
 
         <div class="pt-16 mt-16 lg:grid lg:grid-cols-3 lg:gap-8">
           <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
-            Address
+            Mailing Address
           </h2>
           <div class="grid grid-cols-1 gap-12 mt-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
             <div>

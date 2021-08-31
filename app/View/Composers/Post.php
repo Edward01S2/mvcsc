@@ -18,6 +18,7 @@ class Post extends Composer
         'template-photos',
         'partials.event-item',
         'single-event',
+        'template-custom',
     ];
 
     /**
