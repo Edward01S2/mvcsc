@@ -1,3 +1,26 @@
+@if($banner)
+<div class="banner-container" x-data="{ open: true }">
+  <div class="relative bg-blue-600 banner-container" x-show="open">
+    <div class="px-6 py-3 mx-auto max-w-7xl lg:px-8">
+      <div class="pr-16 sm:text-center sm:px-16">
+        <div class="font-medium text-white banner-text">
+          {!! $banner !!}
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-start pt-1 pr-1 sm:pt-1 sm:pr-2 sm:items-start">
+        <button type="button" class="flex p-2 rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-white" x-on:click="open = ! open">
+          <span class="sr-only">Dismiss</span>
+          <!-- Heroicon name: outline/x -->
+          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+
 <header x-data="{ open: false }" class="relative bg-white shadow">
 
   <div class="px-6 mx-auto max-w-7xl lg:px-8">

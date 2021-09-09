@@ -57,7 +57,9 @@ class ThemeSettings extends Field
             ->addRepeater('social')
                 ->addImage('icon')
                 ->addLink('link')
-            ->endRepeater();
+            ->endRepeater()
+        ->addTab('banner')
+            ->addText('banner text');
 
         return $themeSettings->build();
     }

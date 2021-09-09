@@ -17,7 +17,8 @@ class Header extends Composer
             'primary' => $this->navi('primary'),
             'secondary' => $this->navi('secondary'),
             'header_icon' => get_field('header icon', 'options'),
-            'opt' => get_field('opt out', 'options')
+            'opt' => get_field('opt out', 'options'),
+            'banner' => get_field('banner text', 'options'),
         ];
     }
 

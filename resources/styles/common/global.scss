@@ -52,3 +52,9 @@ a {
     @apply hover:underline;
   }
 }
+
+.banner-text {
+  a {
+    @apply underline font-bold;
+  }
+}
