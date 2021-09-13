@@ -3,7 +3,7 @@
     <div class="px-4 pt-12 pb-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="divide-y-2 divide-gray-200">
         @if($items)
-        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+        <div class="pb-16 mb-16 lg:grid lg:grid-cols-3 lg:gap-8">
           <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
             {!! $title !!}
           </h2>
@@ -22,7 +22,7 @@
         @endif
 
         @if($address)
-        <div class="pt-16 mt-16 lg:grid lg:grid-cols-3 lg:gap-8">
+        <div class="pb-16 mb-16 lg:grid lg:grid-cols-3 lg:gap-8">
           <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
             Mailing Address
           </h2>
@@ -37,7 +37,7 @@
         </div>
         @endif
 
-        <div class="pt-16 mt-16 lg:grid lg:grid-cols-3 lg:gap-8">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
             <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
               Contact
