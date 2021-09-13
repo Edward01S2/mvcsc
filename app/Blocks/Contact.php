@@ -118,18 +118,6 @@ class Contact extends Block
         ]
     ];
 
-    /**
-     * The block preview example data.
-     *
-     * @var array
-     */
-    public $example = [
-        'items' => [
-            ['item' => 'Item one'],
-            ['item' => 'Item two'],
-            ['item' => 'Item three'],
-        ],
-    ];
 
     /**
      * Data to be passed to the block before rendering.
@@ -141,7 +129,7 @@ class Contact extends Block
         return [
             'title' => get_field('title'),
             'subtitle' => get_field('subtitle'),
-            'items' => $this->items(),
+            'items' => get_field('items'),
             'address' => get_field('address'),
             'form' => get_field('gravity'),
         ];
@@ -166,16 +154,6 @@ class Contact extends Block
             ->addFields($this->get(GForm::class));
 
         return $contact->build();
-    }
-
-    /**
-     * Return the items field.
-     *
-     * @return array
-     */
-    public function items()
-    {
-        return get_field('items') ?: $this->example['items'];
     }
 
     /**
