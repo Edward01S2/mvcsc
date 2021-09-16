@@ -54,7 +54,7 @@
           <div>
             <div class="flex items-center group">
               <a id="primary-{!! $loop->iteration !!}"
-                class="pl-8 xl:pl-10 primary-link inline-flex items-center py-7 nav-link tracking-wider transition duration-300 ease-in-out focus:outline-none text-[0.8rem] text-[#4B5320] hover:text-green-600 lg:text-base xl:py-8 {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}"
+                class="pl-8 xl:pl-10 primary-link inline-flex items-center py-7 nav-link tracking-wider transition duration-300 ease-in-out focus:outline-none text-[0.8rem] text-[#364712] hover:text-green-600 lg:text-base xl:py-8 {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}"
                 href="{{ $item->url }}" target="{{ $item->target }}" data-int="{!! $loop->iteration !!}">
                 <span>{!! $item->label !!}</span>  
               </a>
@@ -108,7 +108,7 @@
           @foreach($secondary as $item)
           <div class="sm:hidden">
             <a href="{{ $item->url }}" target="{{ $item->target }}" @click="open = false"
-              class="inline-block py-2 nav-link md:pb-1 tracking-wider transition duration-300 ease-in-out focus:outline-none md:text-base hover:text-c-blue-200 border-b-gradient sm:py-3 {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}">{!!
+              class="inline-block py-2 nav-link md:pb-1 tracking-wider transition duration-300 ease-in-out focus:outline-none md:text-base hover:text-[#364712] border-b-gradient sm:py-3 {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}">{!!
               $item->label !!}</a>
           </div>
           @endforeach
