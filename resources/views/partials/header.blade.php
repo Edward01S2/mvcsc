@@ -1,6 +1,6 @@
 @if($banner)
 <div class="banner-container" x-data="{ open: true }">
-  <div class="relative bg-blue-600 banner-container" x-show="open">
+  <div class="relative bg-[#364712] banner-container" x-show="open">
     <div class="px-6 py-3 mx-auto max-w-7xl lg:px-8">
       <div class="pr-16 sm:text-center sm:px-16">
         <div class="font-medium text-white banner-text">

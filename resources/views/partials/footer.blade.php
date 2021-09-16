@@ -1,4 +1,4 @@
-<footer class="bg-green-900">
+<footer class="bg-[#364712]">
   <div class="px-6 py-12 mx-auto max-w-7xl lg:px-8">
     <div class="flex flex-col lg:flex-row lg:space-x-12 lg:items-center">
       <div class="flex flex-col mb-8 lg:flex-row lg:mb-0 lg:w-1/3 lg:items-center">
